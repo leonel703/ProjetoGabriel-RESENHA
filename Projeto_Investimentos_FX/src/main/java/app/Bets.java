@@ -94,11 +94,6 @@ public class Bets {
         return CAMPEONATOS;
     }
 
-    // Todos os times de todas as seções juntos (usado na Bet Surpresa)
-    public static String[] getTodosTimes() {
-        return FORCA_POR_TIME.keySet().toArray(new String[0]);
-    }
-
     public static String[] getTimes(String campeonato) {
         for (int i = 0; i < CAMPEONATOS.length; i++) {
             if (CAMPEONATOS[i].equals(campeonato)) {
